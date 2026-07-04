@@ -25,21 +25,48 @@ The main purpose of this repository is to build a solid foundation in how the br
 At the current stage, this repository focuses on the following areas:
 
 * Writing semantic HTML structures
-* Applying CSS for layout, spacing, typography, and visual styling
-* Using JavaScript to control page behavior
-* Understanding how HTML, CSS, and JavaScript work together in the browser
+* Organizing text content with headings, paragraphs, and lists
+* Understanding how basic HTML elements are rendered in the browser
+* Preparing a foundation for styling and interaction in later updates
 
 The scope will be updated as the project grows.
 
 ## Project Status
 
-This project is in its initial setup stage.
+This project is in an early development stage.
 
 Current work:
 
 * Repository initialized
 * README drafted
 * Project direction defined
+* Initial HTML page added
+
+## Pages
+
+| File         | Description                                                                                                                                      |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `intro.html` | A simple self-introduction page built with basic HTML elements such as headings, lists, paragraphs, line breaks, and inline text formatting tags |
+
+## Implementation Notes
+
+### `intro.html`
+
+The first page introduces basic HTML document composition through a self-introduction layout.
+
+It includes:
+
+* Main heading
+* Horizontal divider
+* Section headings
+* Unordered list
+* Ordered list
+* Paragraphs
+* Line breaks
+* Strong text emphasis
+* Italic text emphasis
+
+This page is intentionally simple and focuses on understanding how HTML elements structure content before applying CSS or JavaScript.
 
 ## Development Notes
 
