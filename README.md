@@ -26,6 +26,8 @@ At the current stage, this repository focuses on the following areas:
 
 * Writing semantic HTML structures
 * Organizing text content with headings, paragraphs, and lists
+* Structuring tabular information with HTML tables
+* Using links and images to connect pages with external resources and visual content
 * Understanding how basic HTML elements are rendered in the browser
 * Preparing a foundation for styling and interaction in later updates
 
@@ -40,13 +42,15 @@ Current work:
 * Repository initialized
 * README drafted
 * Project direction defined
-* Initial HTML page added
+* Initial HTML pages added
+* Basic text, list, table, image, and link elements practiced
 
 ## Pages
 
-| File         | Description                                                                                                                                      |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `intro.html` | A simple self-introduction page built with basic HTML elements such as headings, lists, paragraphs, line breaks, and inline text formatting tags |
+| File          | Description                                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `intro.html`  | A simple self-introduction page built with basic HTML elements such as headings, lists, paragraphs, line breaks, and inline text formatting tags |
+| `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, and external links                                                 |
 
 ## Implementation Notes
 
@@ -67,6 +71,24 @@ It includes:
 * Italic text emphasis
 
 This page is intentionally simple and focuses on understanding how HTML elements structure content before applying CSS or JavaScript.
+
+### `travel.html`
+
+The travel page organizes a short Bali travel plan using a table-based layout.
+
+It includes:
+
+* Document metadata with character encoding and page title
+* Main heading
+* Horizontal divider
+* Table headers
+* Table rows and cells
+* Merged rows with `rowspan`
+* Merged columns with `colspan`
+* Image elements for travel-related visuals
+* External anchor links for destination references
+
+This page focuses on representing structured schedule data with HTML while combining text, images, and hyperlinks in a single document.
 
 ## Development Notes
 
