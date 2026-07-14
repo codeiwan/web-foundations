@@ -28,6 +28,7 @@ At the current stage, this repository focuses on the following areas:
 * Organizing text content with headings, paragraphs, and lists
 * Structuring tabular information with HTML tables
 * Using links and images to connect pages with external resources and visual content
+* Building basic form layouts with labels, inputs, select boxes, and fieldsets
 * Understanding how basic HTML elements are rendered in the browser
 * Preparing a foundation for styling and interaction in later updates
 
@@ -43,14 +44,15 @@ Current work:
 * README drafted
 * Project direction defined
 * Initial HTML pages added
-* Basic text, list, table, image, and link elements practiced
+* Basic text, list, table, image, link, and form elements practiced
 
 ## Pages
 
-| File          | Description                                                                                                                                      |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `intro.html`  | A simple self-introduction page built with basic HTML elements such as headings, lists, paragraphs, line breaks, and inline text formatting tags |
-| `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, and external links                                                 |
+| File          | Description                                                                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `intro.html`  | A simple self-introduction page built with basic HTML elements such as headings, lists, paragraphs, line breaks, and inline text formatting tags               |
+| `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, and external links                                                               |
+| `signup.html` | A basic signup form page built with form elements, fieldsets, labels, text inputs, password inputs, number inputs, radio buttons, a checkbox, and a select box |
 
 ## Implementation Notes
 
@@ -89,6 +91,26 @@ It includes:
 * External anchor links for destination references
 
 This page focuses on representing structured schedule data with HTML while combining text, images, and hyperlinks in a single document.
+
+### `signup.html`
+
+The signup page introduces a basic form structure for collecting account and profile information.
+
+It includes:
+
+* Document metadata with character encoding, page title, and keyword metadata
+* Form element with request method
+* Fieldsets for grouping related form controls
+* Legends for form section titles
+* Labels connected to input fields
+* Text and password inputs
+* Number inputs with minimum and maximum values
+* Select box with month options
+* Radio buttons for gender selection
+* Checkbox for agreement confirmation
+* Submit input for form submission
+
+This page focuses on understanding how HTML form controls are structured and grouped before adding visual styling or JavaScript validation.
 
 ## Development Notes
 
