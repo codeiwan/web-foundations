@@ -29,8 +29,9 @@ At the current stage, this repository focuses on the following areas:
 * Structuring tabular information with HTML tables
 * Using links and images to connect pages with external resources and visual content
 * Building basic form layouts with labels, inputs, select boxes, and fieldsets
-* Understanding how basic HTML elements are rendered in the browser
-* Preparing a foundation for styling and interaction in later updates
+* Applying external CSS styles to HTML documents
+* Styling typography, links, table headers, and images
+* Understanding how HTML structure and CSS presentation work together
 
 The scope will be updated as the project grows.
 
@@ -41,38 +42,37 @@ This project is in an early development stage.
 Current work:
 
 * Repository initialized
-* README drafted
-* Project direction defined
 * Initial HTML pages added
-* Basic text, list, table, image, link, and form elements practiced
+* Basic text, list, table, image, link, and form elements implemented
+* External CSS introduced
+* Travel page styling added
 
 ## Pages
 
 | File          | Description                                                                                                                                                    |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `intro.html`  | A simple self-introduction page built with basic HTML elements such as headings, lists, paragraphs, line breaks, and inline text formatting tags               |
-| `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, and external links                                                               |
+| `intro.html`  | A simple self-introduction page built with headings, lists, paragraphs, line breaks, and inline text formatting tags                                           |
+| `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, external links, and external CSS styling                                         |
 | `signup.html` | A basic signup form page built with form elements, fieldsets, labels, text inputs, password inputs, number inputs, radio buttons, a checkbox, and a select box |
+
+## Styles
+
+| File                | Description                                                      |
+| ------------------- | ---------------------------------------------------------------- |
+| `styles/travel.css` | Styles the travel page heading, table headers, links, and images |
 
 ## Implementation Notes
 
 ### `intro.html`
 
-The first page introduces basic HTML document composition through a self-introduction layout.
+The introduction page demonstrates basic HTML document composition through a simple self-introduction layout.
 
 It includes:
 
-* Main heading
-* Horizontal divider
-* Section headings
-* Unordered list
-* Ordered list
-* Paragraphs
-* Line breaks
-* Strong text emphasis
-* Italic text emphasis
-
-This page is intentionally simple and focuses on understanding how HTML elements structure content before applying CSS or JavaScript.
+* Headings and horizontal dividers
+* Ordered and unordered lists
+* Paragraphs and line breaks
+* Strong and italic text emphasis
 
 ### `travel.html`
 
@@ -80,17 +80,26 @@ The travel page organizes a short Bali travel plan using a table-based layout.
 
 It includes:
 
-* Document metadata with character encoding and page title
-* Main heading
-* Horizontal divider
-* Table headers
-* Table rows and cells
+* Document metadata
+* Table headers, rows, and cells
 * Merged rows with `rowspan`
 * Merged columns with `colspan`
-* Image elements for travel-related visuals
-* External anchor links for destination references
+* Images with alternative text
+* External destination links
+* An external stylesheet linked through the document head
 
-This page focuses on representing structured schedule data with HTML while combining text, images, and hyperlinks in a single document.
+The page now separates content structure from presentation by moving visual rules into `styles/travel.css`.
+
+### `styles/travel.css`
+
+The stylesheet introduces the first visual layer of the project.
+
+It currently defines:
+
+* Heading size, weight, color, and line height
+* Table header alignment, size, weight, and color
+* Link color, decoration, and emphasis
+* Consistent image width with automatic height adjustment
 
 ### `signup.html`
 
@@ -98,40 +107,31 @@ The signup page introduces a basic form structure for collecting account and pro
 
 It includes:
 
-* Document metadata with character encoding, page title, and keyword metadata
-* Form element with request method
-* Fieldsets for grouping related form controls
-* Legends for form section titles
-* Labels connected to input fields
-* Text and password inputs
-* Number inputs with minimum and maximum values
-* Select box with month options
-* Radio buttons for gender selection
-* Checkbox for agreement confirmation
-* Submit input for form submission
-
-This page focuses on understanding how HTML form controls are structured and grouped before adding visual styling or JavaScript validation.
+* Fieldsets and legends
+* Labels connected to form controls
+* Text, password, and number inputs
+* Select options
+* Radio buttons and checkbox controls
+* Form submission input
 
 ## Development Notes
 
-This repository will be updated incrementally as new pages, components, and interactions are implemented.
+This repository is updated incrementally as new pages, styles, and interactions are implemented.
 
-Each update will aim to keep the documentation aligned with the actual codebase, including:
+Documentation is kept aligned with the actual codebase, including:
 
-* What was added
-* What changed
-* Why the change was made
-* How the project structure evolved
+* Added files
+* Implemented behavior
+* Styling changes
+* Structural improvements
 
 ## Commit Convention
 
-Commit messages will generally follow this format:
+Commit messages generally follow this format:
 
 ```bash
 type: short description
 ```
-
-Common types:
 
 | Type       | Description                                 |
 | ---------- | ------------------------------------------- |
@@ -141,12 +141,6 @@ Common types:
 | `style`    | Update visual styling or formatting         |
 | `refactor` | Improve structure without changing behavior |
 | `chore`    | Update project setup or miscellaneous files |
-
-Example:
-
-```bash
-docs: initialize project README
-```
 
 ## License
 
