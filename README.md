@@ -28,13 +28,13 @@ At the current stage, this repository focuses on the following areas:
 * Organizing text content with headings, paragraphs, and lists
 * Structuring tabular information with HTML tables
 * Using links and images to connect pages with external resources and visual content
-* Building basic form layouts with labels, inputs, select boxes, and fieldsets
-* Applying external CSS styles to HTML documents
-* Styling typography, links, table headers, and images
+* Building form layouts with native HTML controls
+* Applying external stylesheets to individual pages
+* Creating multi-column and content-focused layouts
+* Using reusable class-based CSS rules
+* Controlling typography, spacing, borders, and image dimensions
+* Applying state-based link styles with pseudo-classes
 * Understanding how HTML structure and CSS presentation work together
-* Building multi-column layouts with `inline-block`
-* Applying reusable class-based styles
-* Controlling spacing, borders, and image dimensions
 
 The scope will be updated as the project grows.
 
@@ -44,28 +44,30 @@ This project is in an early development stage.
 
 Current work:
 
-* Repository initialized
-* Initial HTML pages added
-* Basic text, list, table, image, link, and form elements implemented
-* External CSS introduced
-* Travel page styling added
-* Gallery layout implemented with reusable HTML and CSS classes
+* Initial HTML pages implemented
+* Text, list, table, image, link, and form elements applied
+* External stylesheets introduced
+* Travel page styling completed
+* Three-column gallery layout implemented
+* Structured news article layout implemented
 
 ## Pages
 
-| File          | Description                                                                                                                                                    |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `intro.html`  | A simple self-introduction page built with headings, lists, paragraphs, line breaks, and inline text formatting tags                                           |
-| `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, external links, and external CSS styling                                         |
-| `signup.html` | A basic signup form page built with form elements, fieldsets, labels, text inputs, password inputs, number inputs, radio buttons, a checkbox, and a select box |
-| `gallery.html` | A responsive gallery page arranged in a three-column layout with a header and status badge |
+| File           | Description                                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `intro.html`   | A simple self-introduction page built with headings, lists, paragraphs, line breaks, and inline text formatting tags   |
+| `travel.html`  | A travel plan page built with an HTML table, merged rows and columns, images, external links, and external CSS styling |
+| `signup.html`  | A signup form built with grouped form controls, labels, input fields, radio buttons, a checkbox, and a select box      |
+| `gallery.html` | A gallery page arranged in a three-column layout with reusable cells, responsive images, and a status badge            |
+| `news.html`    | A structured news article page with metadata, action buttons, image captions, article sections, and related links      |
 
 ## Styles
 
-| File                | Description                                                      |
-| ------------------- | ---------------------------------------------------------------- |
-| `styles/travel.css` | Styles the travel page heading, table headers, links, and images |
-| `styles/gallery.css` | Defines the gallery grid, image sizing, spacing, header layout, and badge styling |
+| File                 | Description                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `styles/travel.css`  | Styles the travel page heading, table headers, links, and images                                                   |
+| `styles/gallery.css` | Defines the gallery layout, image sizing, spacing, header presentation, and badge styling                          |
+| `styles/news.css`    | Defines the article container, typography, buttons, image panels, content sections, footer links, and hover states |
 
 ## Implementation Notes
 
@@ -94,22 +96,20 @@ It includes:
 * External destination links
 * An external stylesheet linked through the document head
 
-The page now separates content structure from presentation by moving visual rules into `styles/travel.css`.
+The page separates its content structure from presentation through `styles/travel.css`.
 
 ### `styles/travel.css`
 
-The stylesheet introduces the first visual layer of the project.
+The travel stylesheet defines:
 
-It currently defines:
-
-* Heading size, weight, color, and line height
-* Table header alignment, size, weight, and color
-* Link color, decoration, and emphasis
-* Consistent image width with automatic height adjustment
+* Heading typography
+* Table header presentation
+* Link appearance
+* Consistent image sizing
 
 ### `signup.html`
 
-The signup page introduces a basic form structure for collecting account and profile information.
+The signup page introduces a structured form for collecting account and profile information.
 
 It includes:
 
@@ -122,30 +122,58 @@ It includes:
 
 ### `gallery.html`
 
-The gallery page presents a collection of images in a simple three-column layout.
+The gallery page presents a collection of images in a reusable three-column layout.
 
 It includes:
 
-- Semantic page header
-- Gallery rows and cells
-- Reusable class-based layout structure
-- Image alternative text
-- External stylesheet integration
-- A small status badge beside the page title
+* Semantic page header
+* Reusable row and cell classes
+* Image alternative text
+* External stylesheet integration
+* A status badge beside the page title
 
 ### `styles/gallery.css`
 
-The gallery stylesheet introduces layout and spacing techniques using native CSS.
+The gallery stylesheet defines:
 
-It currently defines:
+* A basic CSS reset
+* Three-column cells using `inline-block`
+* Percentage-based widths and margins
+* Responsive image sizing
+* Centered gallery rows
+* Header spacing and borders
+* Inline heading and badge presentation
 
-- A basic CSS reset
-- Three-column cells using `inline-block`
-- Percentage-based widths and margins
-- Responsive image sizing
-- Centered gallery rows
-- Header spacing and bottom border
-- Inline heading and badge presentation
+### `news.html`
+
+The news page recreates a content-focused article layout using semantic document regions.
+
+It includes:
+
+* A centered article container
+* Publisher and publication information
+* Comment and share buttons
+* Main article content
+* Images with descriptive captions
+* Repeated article sections with headings
+* Related and popular news link groups
+* Semantic `header`, `article`, `section`, and `footer` elements
+
+The page uses reusable classes to separate the article structure from its visual presentation.
+
+### `styles/news.css`
+
+The news stylesheet defines:
+
+* A centered container with a maximum width
+* Header typography and metadata alignment
+* Reusable outlined button styles
+* Image panels with captions
+* Section spacing and dividers
+* Paragraph typography and indentation
+* Footer link groups
+* Link states using `:visited` and `:hover`
+* Direct-child selectors for targeted styling
 
 ## Development Notes
 
@@ -154,7 +182,7 @@ This repository is updated incrementally as new pages, styles, and interactions 
 Documentation is kept aligned with the actual codebase, including:
 
 * Added files
-* Implemented behavior
+* Implemented layouts and behavior
 * Styling changes
 * Structural improvements
 
