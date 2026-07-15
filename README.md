@@ -32,6 +32,9 @@ At the current stage, this repository focuses on the following areas:
 * Applying external CSS styles to HTML documents
 * Styling typography, links, table headers, and images
 * Understanding how HTML structure and CSS presentation work together
+* Building multi-column layouts with `inline-block`
+* Applying reusable class-based styles
+* Controlling spacing, borders, and image dimensions
 
 The scope will be updated as the project grows.
 
@@ -46,6 +49,7 @@ Current work:
 * Basic text, list, table, image, link, and form elements implemented
 * External CSS introduced
 * Travel page styling added
+* Gallery layout implemented with reusable HTML and CSS classes
 
 ## Pages
 
@@ -54,12 +58,14 @@ Current work:
 | `intro.html`  | A simple self-introduction page built with headings, lists, paragraphs, line breaks, and inline text formatting tags                                           |
 | `travel.html` | A travel plan page built with an HTML table, merged rows and columns, images, external links, and external CSS styling                                         |
 | `signup.html` | A basic signup form page built with form elements, fieldsets, labels, text inputs, password inputs, number inputs, radio buttons, a checkbox, and a select box |
+| `gallery.html` | A responsive gallery page arranged in a three-column layout with a header and status badge |
 
 ## Styles
 
 | File                | Description                                                      |
 | ------------------- | ---------------------------------------------------------------- |
 | `styles/travel.css` | Styles the travel page heading, table headers, links, and images |
+| `styles/gallery.css` | Defines the gallery grid, image sizing, spacing, header layout, and badge styling |
 
 ## Implementation Notes
 
@@ -113,6 +119,33 @@ It includes:
 * Select options
 * Radio buttons and checkbox controls
 * Form submission input
+
+### `gallery.html`
+
+The gallery page presents a collection of images in a simple three-column layout.
+
+It includes:
+
+- Semantic page header
+- Gallery rows and cells
+- Reusable class-based layout structure
+- Image alternative text
+- External stylesheet integration
+- A small status badge beside the page title
+
+### `styles/gallery.css`
+
+The gallery stylesheet introduces layout and spacing techniques using native CSS.
+
+It currently defines:
+
+- A basic CSS reset
+- Three-column cells using `inline-block`
+- Percentage-based widths and margins
+- Responsive image sizing
+- Centered gallery rows
+- Header spacing and bottom border
+- Inline heading and badge presentation
 
 ## Development Notes
 
